@@ -1,3 +1,6 @@
+{% load static%}
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo a kiodemy</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
 
@@ -13,7 +16,7 @@
         <aside>
           
           <nav>
-            <img src="kiodemy.svg" alt="logo-kiodemy" srcset="" id="layout-logo">
+            <img src="{% static "imgs/kiodemy.svg"%}" alt="logo-kiodemy" srcset="" id="layout-logo">
             <div class=" side-bar common-access">
            <a href="#"> <i class="fa-solid fa-house fa-2x"></i></a>
            <a href="#"> <i class="fa-solid fa-graduation-cap fa-2x"></i></a>
@@ -50,13 +53,11 @@
              <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
              <a href="#"> <i class="fa-regular fa-bell"></i></a>
             </div>
-            <img src="eu.jpeg" alt="foto_de_perfil">
+            <img src="{% static "imgs/eu.jpeg" %}" alt="foto_de_perfil">
 
           </div>
           <div class="navigation-area">
-            <div class="slide-area">
-              
-            </div>
+            
           </div>
         </header>
 
