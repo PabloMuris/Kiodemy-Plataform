@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo a kiodemy</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    {% block 'header' %}
+
+    {%endblock%}
 </head>
 <body>
 
@@ -22,7 +26,7 @@
            <a href="#"> <i class="fa-solid fa-graduation-cap fa-2x"></i></a>
            <a href="#"> <i class="fa-solid fa-user fa-2x"></i></a>
            <a href="#"> <i class="fa-solid fa-envelope fa-2x"></i></a>
-          </div>
+          </div> 
           <div class=" side-bar   settings-out">
            <a href="#"> <i class="fa-solid fa-gear fa-2x"></i></a>
            <a href="#"> <i class="fa-solid fa-right-from-bracket fa-2x"></i></a>
@@ -56,17 +60,17 @@
             <img src="{% static "imgs/eu.jpeg" %}" alt="foto_de_perfil">
 
           </div>
+          
+          
+        </header>
+
+        <main>
           <div class="navigation-area">
             {% block 'content'%}
 
             {% endblock %}
           </div>
 
-          
-        </header>
-
-        <main>
-          
         </main>
       </div>
     

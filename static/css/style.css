@@ -1,0 +1,197 @@
+body, ul, li, a, form, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+  display: grid; /* Define o grid */
+  grid-template-columns: 1fr 11fr; /* Sidebar com 1 parte, Main com 3 partes */
+  grid-template-rows: auto; /* Linha ajustada ao conteúdo */
+  grid-area: auto;
+  
+  
+}
+
+aside{
+  background-color: #533EBA;
+  height: 100vh;
+  position: static;
+  color: aliceblue;
+  padding-top: 1.5rem
+  
+}
+
+
+nav{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  gap: 8rem;
+  height: 100vh;
+}
+
+.user-icons a i{
+  color: black;
+}
+a{
+  width: 30px;
+  width: fit-content;
+  color: #F5F5F7;
+}
+.side-bar{
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+  align-items: center;
+  align-content: center;
+}
+
+#layout-logo{
+  display: flex;
+}
+
+header {
+  background-color: #F5F5F7; /* Apenas para visualizar o header */
+  padding: 10px;
+}
+
+
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px;
+  flex-grow: initial;
+}
+
+.navbar-top h2,
+.navbar-top .search-bar,
+.navbar-top i,
+.navbar-top img {
+  margin: 0; /* Remove margens para evitar desalinhamento */
+  padding: 0;
+}
+
+
+.navbar-top i{
+  align-content: space-between;
+}
+
+.search-bar p {
+  margin: 0; /* Remove margem do texto dentro da barra de busca */
+}
+
+.search-bar{
+  background-color: #533EBA;
+}
+
+.navbar-top img{
+  border-radius: 100%;
+  width: 45px;
+}
+.navbar-top p{
+  padding-inline: 2%;
+}
+
+.user-icons{
+  display: flex;
+  align-self: space-around;
+  gap: 16px;
+}
+
+.user-icons a{
+  width: 16px;
+}
+.user-icons i{
+  width: fit-content;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  size: 16px;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #F5F5F7;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Container da barra de pesquisa */
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #F5F5F7;
+  border-radius: 4px;
+
+  align-items: center;
+  background-color: #F5F5F7;
+}
+
+/* Campo de entrada */
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 40px 10px 10px; /* Espaço para o ícone */
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Ícone de busca */
+.search-bar #search-icon {
+  position: absolute;
+  right: 10px; /* Espaço interno do lado direito */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  pointer-events: none; /* Ícone não interativo */
+ 
+}
+
+
+
+
+

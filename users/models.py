@@ -23,7 +23,7 @@ class AlunoUser(AbstractUser):
 
     cpf = models.CharField(max_length=11)
     email = models.EmailField(max_length=254,unique=True)
-    escolaridade = models.Choices(SCHOLARITY_CHOICES)
+    scholarity = models.Choices(SCHOLARITY_CHOICES)
     phone = models.CharField(max_length=11)
 
 
@@ -31,5 +31,5 @@ class AlunoUser(AbstractUser):
 
 
 class Professor(AlunoUser):
-    nome = models.models.CharField(max_length=200)
-    cursos = models.ManyToManyField()
+    name = models.models.CharField(max_length=200)
+    courses = models.ManyToManyField()
